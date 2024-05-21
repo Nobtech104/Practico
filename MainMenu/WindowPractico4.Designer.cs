@@ -1,8 +1,6 @@
-﻿using System.Windows.Forms;
-
-namespace Design
+﻿namespace MainMenu
 {
-    partial class WindowPractico2
+    partial class WindowPractico4
     {
         /// <summary>
         /// Required designer variable.
@@ -30,17 +28,12 @@ namespace Design
         /// </summary>
         private void InitializeComponent()
         {
-            this.tbpEjercicio4 = new System.Windows.Forms.TabPage();
-            this.numUser3 = new System.Windows.Forms.NumericUpDown();
-            this.btnCancel3 = new System.Windows.Forms.Button();
-            this.btnAccept3 = new System.Windows.Forms.Button();
-            this.lblSubtitle3 = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
             this.tbcMenu = new System.Windows.Forms.TabControl();
             this.tbpEjercicio1 = new System.Windows.Forms.TabPage();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnAccept = new System.Windows.Forms.Button();
-            this.numUser = new System.Windows.Forms.NumericUpDown();
+            this.numUserAlto = new System.Windows.Forms.NumericUpDown();
             this.lblSubtitle = new System.Windows.Forms.Label();
             this.txtResultado = new System.Windows.Forms.TextBox();
             this.tbpEjercicio2 = new System.Windows.Forms.TabPage();
@@ -55,81 +48,26 @@ namespace Design
             this.numUser2 = new System.Windows.Forms.NumericUpDown();
             this.lblSubtitle2 = new System.Windows.Forms.Label();
             this.txtResultado2 = new System.Windows.Forms.TextBox();
-            this.splPanel = new System.Windows.Forms.SplitContainer();
-            this.lblSubtitle4 = new System.Windows.Forms.Label();
-            this.tbpEjercicio4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numUser3)).BeginInit();
+            this.tbpEjercicio4 = new System.Windows.Forms.TabPage();
+            this.numUser3 = new System.Windows.Forms.NumericUpDown();
+            this.btnCancel3 = new System.Windows.Forms.Button();
+            this.btnAccept3 = new System.Windows.Forms.Button();
+            this.lblSubtitle3 = new System.Windows.Forms.Label();
+            this.txtResultado3 = new System.Windows.Forms.TextBox();
+            this.numUserBase = new System.Windows.Forms.NumericUpDown();
+            this.lblAlto = new System.Windows.Forms.Label();
+            this.lblBase = new System.Windows.Forms.Label();
             this.tbcMenu.SuspendLayout();
             this.tbpEjercicio1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numUser)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUserAlto)).BeginInit();
             this.tbpEjercicio2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numUser1)).BeginInit();
             this.tbpEjercicio3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numUser2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.splPanel)).BeginInit();
-            this.splPanel.Panel1.SuspendLayout();
-            this.splPanel.Panel2.SuspendLayout();
-            this.splPanel.SuspendLayout();
+            this.tbpEjercicio4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numUser3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUserBase)).BeginInit();
             this.SuspendLayout();
-            // 
-            // tbpEjercicio4
-            // 
-            this.tbpEjercicio4.BackColor = System.Drawing.Color.LightSalmon;
-            this.tbpEjercicio4.Controls.Add(this.splPanel);
-            this.tbpEjercicio4.Location = new System.Drawing.Point(4, 32);
-            this.tbpEjercicio4.Name = "tbpEjercicio4";
-            this.tbpEjercicio4.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpEjercicio4.Size = new System.Drawing.Size(1260, 586);
-            this.tbpEjercicio4.TabIndex = 3;
-            this.tbpEjercicio4.Text = "Ejercicio 4";
-            // 
-            // numUser3
-            // 
-            this.numUser3.BackColor = System.Drawing.Color.DarkSalmon;
-            this.numUser3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.numUser3.Font = new System.Drawing.Font("Jersey 10", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numUser3.Location = new System.Drawing.Point(250, 191);
-            this.numUser3.Name = "numUser3";
-            this.numUser3.Size = new System.Drawing.Size(204, 36);
-            this.numUser3.TabIndex = 1;
-            // 
-            // btnCancel3
-            // 
-            this.btnCancel3.BackColor = System.Drawing.Color.DarkSalmon;
-            this.btnCancel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnCancel3.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel3.Location = new System.Drawing.Point(395, 484);
-            this.btnCancel3.Name = "btnCancel3";
-            this.btnCancel3.Size = new System.Drawing.Size(97, 31);
-            this.btnCancel3.TabIndex = 3;
-            this.btnCancel3.Text = "Volver";
-            this.btnCancel3.UseVisualStyleBackColor = false;
-            this.btnCancel3.Click += new System.EventHandler(this.btnCancel3_Click);
-            // 
-            // btnAccept3
-            // 
-            this.btnAccept3.BackColor = System.Drawing.Color.DarkSalmon;
-            this.btnAccept3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnAccept3.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnAccept3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAccept3.Font = new System.Drawing.Font("Jersey 10", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAccept3.Location = new System.Drawing.Point(212, 484);
-            this.btnAccept3.Name = "btnAccept3";
-            this.btnAccept3.Size = new System.Drawing.Size(97, 31);
-            this.btnAccept3.TabIndex = 2;
-            this.btnAccept3.Text = "Aceptar";
-            this.btnAccept3.UseVisualStyleBackColor = false;
-            this.btnAccept3.Click += new System.EventHandler(this.btnAccept3_Click);
-            // 
-            // lblSubtitle3
-            // 
-            this.lblSubtitle3.AutoSize = true;
-            this.lblSubtitle3.Font = new System.Drawing.Font("Jersey 10", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSubtitle3.Location = new System.Drawing.Point(10, 34);
-            this.lblSubtitle3.Name = "lblSubtitle3";
-            this.lblSubtitle3.Size = new System.Drawing.Size(685, 40);
-            this.lblSubtitle3.TabIndex = 5;
-            this.lblSubtitle3.Text = "Ingrese la cantidad de números que desea calcular";
             // 
             // lblTitle
             // 
@@ -138,9 +76,9 @@ namespace Design
             this.lblTitle.ForeColor = System.Drawing.Color.Black;
             this.lblTitle.Location = new System.Drawing.Point(494, 5);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(277, 69);
-            this.lblTitle.TabIndex = 4;
-            this.lblTitle.Text = "PRÁCTICO 2";
+            this.lblTitle.Size = new System.Drawing.Size(274, 69);
+            this.lblTitle.TabIndex = 6;
+            this.lblTitle.Text = "PRÁCTICO 4";
             // 
             // tbcMenu
             // 
@@ -151,18 +89,21 @@ namespace Design
             this.tbcMenu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.tbcMenu.Font = new System.Drawing.Font("Jersey 10", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbcMenu.HotTrack = true;
-            this.tbcMenu.Location = new System.Drawing.Point(0, 63);
+            this.tbcMenu.Location = new System.Drawing.Point(-2, 59);
             this.tbcMenu.Name = "tbcMenu";
             this.tbcMenu.SelectedIndex = 0;
             this.tbcMenu.Size = new System.Drawing.Size(1268, 622);
-            this.tbcMenu.TabIndex = 0;
+            this.tbcMenu.TabIndex = 7;
             // 
             // tbpEjercicio1
             // 
             this.tbpEjercicio1.BackColor = System.Drawing.Color.LightSalmon;
+            this.tbpEjercicio1.Controls.Add(this.lblBase);
+            this.tbpEjercicio1.Controls.Add(this.lblAlto);
+            this.tbpEjercicio1.Controls.Add(this.numUserBase);
             this.tbpEjercicio1.Controls.Add(this.btnCancel);
             this.tbpEjercicio1.Controls.Add(this.btnAccept);
-            this.tbpEjercicio1.Controls.Add(this.numUser);
+            this.tbpEjercicio1.Controls.Add(this.numUserAlto);
             this.tbpEjercicio1.Controls.Add(this.lblSubtitle);
             this.tbpEjercicio1.Controls.Add(this.txtResultado);
             this.tbpEjercicio1.Location = new System.Drawing.Point(4, 32);
@@ -175,7 +116,6 @@ namespace Design
             // btnCancel
             // 
             this.btnCancel.BackColor = System.Drawing.Color.DarkSalmon;
-            this.btnCancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancel.Location = new System.Drawing.Point(667, 512);
             this.btnCancel.Name = "btnCancel";
@@ -188,8 +128,6 @@ namespace Design
             // btnAccept
             // 
             this.btnAccept.BackColor = System.Drawing.Color.DarkSalmon;
-            this.btnAccept.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnAccept.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnAccept.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAccept.Font = new System.Drawing.Font("Jersey 10", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAccept.Location = new System.Drawing.Point(496, 512);
@@ -200,25 +138,26 @@ namespace Design
             this.btnAccept.UseVisualStyleBackColor = false;
             this.btnAccept.Click += new System.EventHandler(this.btnAccept_Click);
             // 
-            // numUser
+            // numUserAlto
             // 
-            this.numUser.BackColor = System.Drawing.Color.DarkSalmon;
-            this.numUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.numUser.Font = new System.Drawing.Font("Jersey 10", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numUser.Location = new System.Drawing.Point(570, 128);
-            this.numUser.Name = "numUser";
-            this.numUser.Size = new System.Drawing.Size(120, 36);
-            this.numUser.TabIndex = 1;
+            this.numUserAlto.BackColor = System.Drawing.Color.DarkSalmon;
+            this.numUserAlto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.numUserAlto.Font = new System.Drawing.Font("Jersey 10", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numUserAlto.Location = new System.Drawing.Point(463, 128);
+            this.numUserAlto.Name = "numUserAlto";
+            this.numUserAlto.Size = new System.Drawing.Size(120, 36);
+            this.numUserAlto.TabIndex = 1;
             // 
             // lblSubtitle
             // 
             this.lblSubtitle.AutoSize = true;
             this.lblSubtitle.Font = new System.Drawing.Font("Jersey 10", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSubtitle.Location = new System.Drawing.Point(461, 35);
+            this.lblSubtitle.ForeColor = System.Drawing.Color.Black;
+            this.lblSubtitle.Location = new System.Drawing.Point(448, 35);
             this.lblSubtitle.Name = "lblSubtitle";
-            this.lblSubtitle.Size = new System.Drawing.Size(339, 40);
+            this.lblSubtitle.Size = new System.Drawing.Size(365, 40);
             this.lblSubtitle.TabIndex = 1;
-            this.lblSubtitle.Text = "¿Es mayor de edad o no?";
+            this.lblSubtitle.Text = "Calcular área del triángulo";
             // 
             // txtResultado
             // 
@@ -250,7 +189,6 @@ namespace Design
             // btnCancel1
             // 
             this.btnCancel1.BackColor = System.Drawing.Color.DarkSalmon;
-            this.btnCancel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnCancel1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancel1.Location = new System.Drawing.Point(667, 512);
             this.btnCancel1.Name = "btnCancel1";
@@ -263,7 +201,6 @@ namespace Design
             // btnAccept1
             // 
             this.btnAccept1.BackColor = System.Drawing.Color.DarkSalmon;
-            this.btnAccept1.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnAccept1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAccept1.Font = new System.Drawing.Font("Jersey 10", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAccept1.Location = new System.Drawing.Point(496, 512);
@@ -288,11 +225,11 @@ namespace Design
             // 
             this.lblSubtitle1.AutoSize = true;
             this.lblSubtitle1.Font = new System.Drawing.Font("Jersey 10", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSubtitle1.Location = new System.Drawing.Point(532, 34);
+            this.lblSubtitle1.Location = new System.Drawing.Point(545, 34);
             this.lblSubtitle1.Name = "lblSubtitle1";
-            this.lblSubtitle1.Size = new System.Drawing.Size(197, 40);
+            this.lblSubtitle1.Size = new System.Drawing.Size(171, 40);
             this.lblSubtitle1.TabIndex = 3;
-            this.lblSubtitle1.Text = "¿Par o impar?";
+            this.lblSubtitle1.Text = "Calculadora";
             // 
             // txtResultado1
             // 
@@ -324,7 +261,6 @@ namespace Design
             // btnCancel2
             // 
             this.btnCancel2.BackColor = System.Drawing.Color.DarkSalmon;
-            this.btnCancel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnCancel2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancel2.Location = new System.Drawing.Point(667, 512);
             this.btnCancel2.Name = "btnCancel2";
@@ -337,8 +273,6 @@ namespace Design
             // btnAccept2
             // 
             this.btnAccept2.BackColor = System.Drawing.Color.DarkSalmon;
-            this.btnAccept2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnAccept2.DialogResult = System.Windows.Forms.DialogResult.Yes;
             this.btnAccept2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAccept2.Font = new System.Drawing.Font("Jersey 10", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAccept2.Location = new System.Drawing.Point(496, 512);
@@ -363,11 +297,11 @@ namespace Design
             // 
             this.lblSubtitle2.AutoSize = true;
             this.lblSubtitle2.Font = new System.Drawing.Font("Jersey 10", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSubtitle2.Location = new System.Drawing.Point(476, 34);
+            this.lblSubtitle2.Location = new System.Drawing.Point(496, 34);
             this.lblSubtitle2.Name = "lblSubtitle2";
-            this.lblSubtitle2.Size = new System.Drawing.Size(309, 40);
+            this.lblSubtitle2.Size = new System.Drawing.Size(269, 40);
             this.lblSubtitle2.TabIndex = 0;
-            this.lblSubtitle2.Text = "Imprimir lista de pares";
+            this.lblSubtitle2.Text = "Tabla de multiplicar";
             // 
             // txtResultado2
             // 
@@ -381,67 +315,134 @@ namespace Design
             this.txtResultado2.TabIndex = 0;
             this.txtResultado2.TabStop = false;
             // 
-            // splPanel
+            // tbpEjercicio4
             // 
-            this.splPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.splPanel.Location = new System.Drawing.Point(0, 0);
-            this.splPanel.Name = "splPanel";
+            this.tbpEjercicio4.BackColor = System.Drawing.Color.LightSalmon;
+            this.tbpEjercicio4.Controls.Add(this.numUser3);
+            this.tbpEjercicio4.Controls.Add(this.btnCancel3);
+            this.tbpEjercicio4.Controls.Add(this.btnAccept3);
+            this.tbpEjercicio4.Controls.Add(this.lblSubtitle3);
+            this.tbpEjercicio4.Controls.Add(this.txtResultado3);
+            this.tbpEjercicio4.Location = new System.Drawing.Point(4, 32);
+            this.tbpEjercicio4.Name = "tbpEjercicio4";
+            this.tbpEjercicio4.Padding = new System.Windows.Forms.Padding(3);
+            this.tbpEjercicio4.Size = new System.Drawing.Size(1260, 586);
+            this.tbpEjercicio4.TabIndex = 3;
+            this.tbpEjercicio4.Text = "Ejercicio 4";
             // 
-            // splPanel.Panel1
+            // numUser3
             // 
-            this.splPanel.Panel1.Controls.Add(this.btnCancel3);
-            this.splPanel.Panel1.Controls.Add(this.numUser3);
-            this.splPanel.Panel1.Controls.Add(this.btnAccept3);
-            this.splPanel.Panel1.Controls.Add(this.lblSubtitle3);
+            this.numUser3.BackColor = System.Drawing.Color.DarkSalmon;
+            this.numUser3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.numUser3.Font = new System.Drawing.Font("Jersey 10", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numUser3.Location = new System.Drawing.Point(570, 128);
+            this.numUser3.Name = "numUser3";
+            this.numUser3.Size = new System.Drawing.Size(120, 36);
+            this.numUser3.TabIndex = 1;
             // 
-            // splPanel.Panel2
+            // btnCancel3
             // 
-            this.splPanel.Panel2.Controls.Add(this.lblSubtitle4);
-            this.splPanel.Size = new System.Drawing.Size(1259, 585);
-            this.splPanel.SplitterDistance = 708;
-            this.splPanel.TabIndex = 6;
+            this.btnCancel3.BackColor = System.Drawing.Color.DarkSalmon;
+            this.btnCancel3.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnCancel3.Location = new System.Drawing.Point(667, 512);
+            this.btnCancel3.Name = "btnCancel3";
+            this.btnCancel3.Size = new System.Drawing.Size(97, 31);
+            this.btnCancel3.TabIndex = 3;
+            this.btnCancel3.Text = "Volver";
+            this.btnCancel3.UseVisualStyleBackColor = false;
+            this.btnCancel3.Click += new System.EventHandler(this.btnCancel3_Click);
             // 
-            // lblSubtitle4
+            // btnAccept3
             // 
-            this.lblSubtitle4.AutoSize = true;
-            this.lblSubtitle4.Font = new System.Drawing.Font("Jersey 10", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSubtitle4.Location = new System.Drawing.Point(11, 34);
-            this.lblSubtitle4.Name = "lblSubtitle4";
-            this.lblSubtitle4.Size = new System.Drawing.Size(521, 40);
-            this.lblSubtitle4.TabIndex = 6;
-            this.lblSubtitle4.Text = "Ingrese los valores que desea calcular";
+            this.btnAccept3.BackColor = System.Drawing.Color.DarkSalmon;
+            this.btnAccept3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAccept3.Font = new System.Drawing.Font("Jersey 10", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAccept3.Location = new System.Drawing.Point(496, 512);
+            this.btnAccept3.Name = "btnAccept3";
+            this.btnAccept3.Size = new System.Drawing.Size(97, 31);
+            this.btnAccept3.TabIndex = 2;
+            this.btnAccept3.Text = "Aceptar";
+            this.btnAccept3.UseVisualStyleBackColor = false;
+            this.btnAccept3.Click += new System.EventHandler(this.btnAccept3_Click);
             // 
-            // WindowPractico2
+            // lblSubtitle3
+            // 
+            this.lblSubtitle3.AutoSize = true;
+            this.lblSubtitle3.Font = new System.Drawing.Font("Jersey 10", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSubtitle3.Location = new System.Drawing.Point(467, 34);
+            this.lblSubtitle3.Name = "lblSubtitle3";
+            this.lblSubtitle3.Size = new System.Drawing.Size(327, 40);
+            this.lblSubtitle3.TabIndex = 5;
+            this.lblSubtitle3.Text = "Imprimir serie Fibonacci";
+            // 
+            // txtResultado3
+            // 
+            this.txtResultado3.BackColor = System.Drawing.Color.DarkSalmon;
+            this.txtResultado3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtResultado3.Location = new System.Drawing.Point(400, 235);
+            this.txtResultado3.Multiline = true;
+            this.txtResultado3.Name = "txtResultado3";
+            this.txtResultado3.ReadOnly = true;
+            this.txtResultado3.Size = new System.Drawing.Size(460, 217);
+            this.txtResultado3.TabIndex = 4;
+            this.txtResultado3.TabStop = false;
+            // 
+            // numUserBase
+            // 
+            this.numUserBase.BackColor = System.Drawing.Color.DarkSalmon;
+            this.numUserBase.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.numUserBase.Font = new System.Drawing.Font("Jersey 10", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numUserBase.Location = new System.Drawing.Point(677, 128);
+            this.numUserBase.Name = "numUserBase";
+            this.numUserBase.Size = new System.Drawing.Size(120, 36);
+            this.numUserBase.TabIndex = 4;
+            // 
+            // lblAlto
+            // 
+            this.lblAlto.AutoSize = true;
+            this.lblAlto.ForeColor = System.Drawing.Color.Black;
+            this.lblAlto.Location = new System.Drawing.Point(459, 102);
+            this.lblAlto.Name = "lblAlto";
+            this.lblAlto.Size = new System.Drawing.Size(55, 23);
+            this.lblAlto.TabIndex = 5;
+            this.lblAlto.Text = "Altura";
+            // 
+            // lblBase
+            // 
+            this.lblBase.AutoSize = true;
+            this.lblBase.ForeColor = System.Drawing.Color.Black;
+            this.lblBase.Location = new System.Drawing.Point(673, 102);
+            this.lblBase.Name = "lblBase";
+            this.lblBase.Size = new System.Drawing.Size(45, 23);
+            this.lblBase.TabIndex = 6;
+            this.lblBase.Text = "Base";
+            // 
+            // WindowPractico4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSalmon;
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.ControlBox = false;
-            this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.tbcMenu);
-            this.MaximizeBox = false;
-            this.Name = "WindowPractico2";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Practico2";
-            this.tbpEjercicio4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numUser3)).EndInit();
+            this.Controls.Add(this.lblTitle);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Name = "WindowPractico4";
+            this.Text = "Practico4";
             this.tbcMenu.ResumeLayout(false);
             this.tbpEjercicio1.ResumeLayout(false);
             this.tbpEjercicio1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numUser)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUserAlto)).EndInit();
             this.tbpEjercicio2.ResumeLayout(false);
             this.tbpEjercicio2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numUser1)).EndInit();
             this.tbpEjercicio3.ResumeLayout(false);
             this.tbpEjercicio3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numUser2)).EndInit();
-            this.splPanel.Panel1.ResumeLayout(false);
-            this.splPanel.Panel1.PerformLayout();
-            this.splPanel.Panel2.ResumeLayout(false);
-            this.splPanel.Panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splPanel)).EndInit();
-            this.splPanel.ResumeLayout(false);
+            this.tbpEjercicio4.ResumeLayout(false);
+            this.tbpEjercicio4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numUser3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUserBase)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -449,37 +450,34 @@ namespace Design
 
         #endregion
 
-        private System.Windows.Forms.TabPage tbpEjercicio4;
-        private System.Windows.Forms.Label lblSubtitle3;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.TabControl tbcMenu;
         private System.Windows.Forms.TabPage tbpEjercicio1;
+        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnAccept;
+        private System.Windows.Forms.NumericUpDown numUserAlto;
         private System.Windows.Forms.Label lblSubtitle;
         private System.Windows.Forms.TextBox txtResultado;
         private System.Windows.Forms.TabPage tbpEjercicio2;
-        private System.Windows.Forms.Label lblSubtitle1;
-        private System.Windows.Forms.TextBox txtResultado1;
-        private System.Windows.Forms.TabPage tbpEjercicio3;
-        private System.Windows.Forms.Label lblSubtitle2;
-        private System.Windows.Forms.TextBox txtResultado2;
-        private System.Windows.Forms.NumericUpDown numUser;
-        private System.Windows.Forms.Button btnAccept;
-        private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnCancel1;
         private System.Windows.Forms.Button btnAccept1;
         private System.Windows.Forms.NumericUpDown numUser1;
-        private NumericUpDown numUser3;
-        private Button btnCancel3;
-        private Button btnAccept3;
-        private Button btnCancel2;
-        private Button btnAccept2;
-        private NumericUpDown numUser2;
-        private SplitContainer splPanel;
-        private Label lblSubtitle4;
-
-        public TextBox TxtResultado { get => txtResultado; set => txtResultado = value; }
-        public TextBox TxtResultado1 { get => txtResultado1; set => txtResultado1 = value; }
-        public TextBox TxtResultado2 { get => txtResultado2; set => txtResultado2 = value; }
-        
+        private System.Windows.Forms.Label lblSubtitle1;
+        private System.Windows.Forms.TextBox txtResultado1;
+        private System.Windows.Forms.TabPage tbpEjercicio3;
+        private System.Windows.Forms.Button btnCancel2;
+        private System.Windows.Forms.Button btnAccept2;
+        private System.Windows.Forms.NumericUpDown numUser2;
+        private System.Windows.Forms.Label lblSubtitle2;
+        private System.Windows.Forms.TextBox txtResultado2;
+        private System.Windows.Forms.TabPage tbpEjercicio4;
+        private System.Windows.Forms.NumericUpDown numUser3;
+        private System.Windows.Forms.Button btnCancel3;
+        private System.Windows.Forms.Button btnAccept3;
+        private System.Windows.Forms.Label lblSubtitle3;
+        private System.Windows.Forms.TextBox txtResultado3;
+        private System.Windows.Forms.NumericUpDown numUserBase;
+        private System.Windows.Forms.Label lblBase;
+        private System.Windows.Forms.Label lblAlto;
     }
 }

@@ -184,7 +184,8 @@
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.groupBox1);
             this.ForeColor = System.Drawing.Color.Black;
-            this.Name = "MainMenu";
+            this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu Principal";
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);

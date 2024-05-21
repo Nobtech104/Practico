@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Logic;
+using MainMenu;
 
 namespace Design
 {
@@ -21,7 +22,7 @@ namespace Design
 
         private void btnPractico1_Click(object sender, EventArgs e)
         {
-            Form windowPractico = new WindowPractico1(this);
+            WindowPractico1 windowPractico = new WindowPractico1(this);
 
             try {
 
@@ -47,7 +48,7 @@ namespace Design
 
         private void btnPractico2_Click(object sender, EventArgs e)
         {
-            Form windowPractico = new WindowPractico2(this);
+            WindowPractico2 windowPractico = new WindowPractico2(this);
 
             try
             {
@@ -71,7 +72,7 @@ namespace Design
         private void btnPractico3_Click(object sender, EventArgs e)
         {
 
-            Form windowPractico = new WindowPractico3(this);
+            WindowPractico3 windowPractico = new WindowPractico3(this);
 
             try
             {
@@ -96,7 +97,7 @@ namespace Design
         private void btnPractico4_Click(object sender, EventArgs e)
         {
 
-            Form windowPractico = new WindowPractico1(this);
+            WindowPractico4 windowPractico = new WindowPractico4(this);
 
             try
             {

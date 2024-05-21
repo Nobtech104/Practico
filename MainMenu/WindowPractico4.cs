@@ -9,28 +9,24 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Logic;
 
-namespace Design
+namespace MainMenu
 {
-    public partial class WindowPractico2 : Form
+    public partial class WindowPractico4 : Form
     {
 
         private Form parentForm;
 
-        public Form ParentForm1 { get => parentForm; set => parentForm = value; }
-
-        public WindowPractico2(Form window)
+        public WindowPractico4(Form parentWindow)
         {
-
-            parentForm = window;
-
             InitializeComponent();
+
+            parentForm = parentWindow;
         }
 
-      
+        public Form ParentForm1 { get => parentForm; set => parentForm = value; }
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-
             try
             {
                 ParentForm1.Show();
@@ -47,7 +43,6 @@ namespace Design
 
         private void btnCancel1_Click(object sender, EventArgs e)
         {
-
             try
             {
                 ParentForm1.Show();
@@ -64,7 +59,6 @@ namespace Design
 
         private void btnCancel2_Click(object sender, EventArgs e)
         {
-
             try
             {
                 ParentForm1.Show();
@@ -77,11 +71,11 @@ namespace Design
                 MessageBox.Show("Error: " + ex, null, MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
 
             }
+
         }
 
         private void btnCancel3_Click(object sender, EventArgs e)
         {
-
             try
             {
                 ParentForm1.Show();
@@ -98,38 +92,29 @@ namespace Design
 
         private void btnAccept_Click(object sender, EventArgs e)
         {
+            Practico4 practico = new Practico4();
 
-            Practico2 practico = new Practico2();
-
-            TxtResultado.Text = practico.ej1(numUser.Value);
-
+            txtResultado.Text = practico.ej1(numUserAlto.Value, numUserBase.Value);
         }
 
         private void btnAccept1_Click(object sender, EventArgs e)
         {
 
-            Practico2 practico = new Practico2();
-
-            TxtResultado1.Text = practico.ej2(numUser1.Value);
-
         }
 
         private void btnAccept2_Click(object sender, EventArgs e)
         {
+            Practico3 practico = new Practico3();
 
-            Practico2 practico = new Practico2();
-
-            TxtResultado2.Text = practico.ej3(numUser2.Value);
+            
 
         }
 
         private void btnAccept3_Click(object sender, EventArgs e)
         {
+            Practico3 practico = new Practico3();
 
-            Practico2 practico = new Practico2();
-
-           practico.ej4(numUser3.Value);
-
+            
         }
     }
 }

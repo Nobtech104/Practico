@@ -80,10 +80,10 @@ namespace Design
             this.tbcMenu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.tbcMenu.Font = new System.Drawing.Font("Jersey 10", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbcMenu.HotTrack = true;
-            this.tbcMenu.Location = new System.Drawing.Point(0, 64);
+            this.tbcMenu.Location = new System.Drawing.Point(0, 63);
             this.tbcMenu.Name = "tbcMenu";
             this.tbcMenu.SelectedIndex = 0;
-            this.tbcMenu.Size = new System.Drawing.Size(1264, 615);
+            this.tbcMenu.Size = new System.Drawing.Size(1268, 622);
             this.tbcMenu.TabIndex = 0;
             // 
             // tbpEjercicio1
@@ -96,7 +96,7 @@ namespace Design
             this.tbpEjercicio1.Location = new System.Drawing.Point(4, 32);
             this.tbpEjercicio1.Name = "tbpEjercicio1";
             this.tbpEjercicio1.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpEjercicio1.Size = new System.Drawing.Size(1256, 579);
+            this.tbpEjercicio1.Size = new System.Drawing.Size(1260, 586);
             this.tbpEjercicio1.TabIndex = 1;
             this.tbpEjercicio1.Text = "Ejercicio 1";
             // 
@@ -348,7 +348,7 @@ namespace Design
             this.Controls.Add(this.tbcMenu);
             this.Name = "WindowPractico1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "WindowPractico1";
+            this.Text = "Practico 1";
             this.tbcMenu.ResumeLayout(false);
             this.tbpEjercicio1.ResumeLayout(false);
             this.tbpEjercicio1.PerformLayout();

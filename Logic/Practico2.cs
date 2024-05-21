@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Logic
 {
-     public class Practico2
+    public class Practico2
     {
 
 
@@ -21,7 +21,7 @@ namespace Logic
         public string ej1(decimal userIn)
         {
 
-            if(userIn < 18)
+            if (userIn < 18)
             {
 
                 return "Es menor";
@@ -57,7 +57,7 @@ namespace Logic
 
             string res = "";
 
-            for(int i = 2; i <= userIn * 2; i = i + 2)
+            for (int i = 0; i <= ((userIn * 2) - 1); i = i + 2)
             {
 
                 res = res + i + " ";
@@ -68,18 +68,31 @@ namespace Logic
 
         }
 
-        public string ej4(decimal userIn)
+        public string ej4(decimal userCont)
         {
+
+            decimal calc;
+
+            int cont = 0;
 
             string res = "";
 
 
-            for (int i = 0; i <= 3; i++)
+            do
             {
 
-                res = res + userIn + " ";
+                res = res + userCont + " ";
+
+                cont++;
+
 
             }
+            while (cont != userCont);
+
+            return res;
+                
+         }
 
     }
+
 }
