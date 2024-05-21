@@ -99,20 +99,24 @@ namespace MainMenu
 
         private void btnAccept1_Click(object sender, EventArgs e)
         {
+            Practico4 practico = new Practico4();
 
+            
         }
 
         private void btnAccept2_Click(object sender, EventArgs e)
         {
-            Practico3 practico = new Practico3();
+            Practico4 practico = new Practico4();
 
-            
+            txtResultado2.Text = practico.ej3(numUser2.Value);
 
         }
 
         private void btnAccept3_Click(object sender, EventArgs e)
         {
-            Practico3 practico = new Practico3();
+            Practico4 practico = new Practico4();
+
+            txtResultado3.Text = Convert.ToString(practico.ej4(numUser3.Value));
 
             
         }

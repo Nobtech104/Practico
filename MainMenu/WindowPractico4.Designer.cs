@@ -31,6 +31,9 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.tbcMenu = new System.Windows.Forms.TabControl();
             this.tbpEjercicio1 = new System.Windows.Forms.TabPage();
+            this.lblBase = new System.Windows.Forms.Label();
+            this.lblAlto = new System.Windows.Forms.Label();
+            this.numUserBase = new System.Windows.Forms.NumericUpDown();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnAccept = new System.Windows.Forms.Button();
             this.numUserAlto = new System.Windows.Forms.NumericUpDown();
@@ -54,11 +57,9 @@
             this.btnAccept3 = new System.Windows.Forms.Button();
             this.lblSubtitle3 = new System.Windows.Forms.Label();
             this.txtResultado3 = new System.Windows.Forms.TextBox();
-            this.numUserBase = new System.Windows.Forms.NumericUpDown();
-            this.lblAlto = new System.Windows.Forms.Label();
-            this.lblBase = new System.Windows.Forms.Label();
             this.tbcMenu.SuspendLayout();
             this.tbpEjercicio1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numUserBase)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numUserAlto)).BeginInit();
             this.tbpEjercicio2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numUser1)).BeginInit();
@@ -66,7 +67,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numUser2)).BeginInit();
             this.tbpEjercicio4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numUser3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numUserBase)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -112,6 +112,36 @@
             this.tbpEjercicio1.Size = new System.Drawing.Size(1260, 586);
             this.tbpEjercicio1.TabIndex = 1;
             this.tbpEjercicio1.Text = "Ejercicio 1";
+            // 
+            // lblBase
+            // 
+            this.lblBase.AutoSize = true;
+            this.lblBase.ForeColor = System.Drawing.Color.Black;
+            this.lblBase.Location = new System.Drawing.Point(673, 102);
+            this.lblBase.Name = "lblBase";
+            this.lblBase.Size = new System.Drawing.Size(45, 23);
+            this.lblBase.TabIndex = 6;
+            this.lblBase.Text = "Base";
+            // 
+            // lblAlto
+            // 
+            this.lblAlto.AutoSize = true;
+            this.lblAlto.ForeColor = System.Drawing.Color.Black;
+            this.lblAlto.Location = new System.Drawing.Point(459, 102);
+            this.lblAlto.Name = "lblAlto";
+            this.lblAlto.Size = new System.Drawing.Size(55, 23);
+            this.lblAlto.TabIndex = 5;
+            this.lblAlto.Text = "Altura";
+            // 
+            // numUserBase
+            // 
+            this.numUserBase.BackColor = System.Drawing.Color.DarkSalmon;
+            this.numUserBase.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.numUserBase.Font = new System.Drawing.Font("Jersey 10", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numUserBase.Location = new System.Drawing.Point(677, 128);
+            this.numUserBase.Name = "numUserBase";
+            this.numUserBase.Size = new System.Drawing.Size(120, 36);
+            this.numUserBase.TabIndex = 4;
             // 
             // btnCancel
             // 
@@ -369,11 +399,11 @@
             // 
             this.lblSubtitle3.AutoSize = true;
             this.lblSubtitle3.Font = new System.Drawing.Font("Jersey 10", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSubtitle3.Location = new System.Drawing.Point(467, 34);
+            this.lblSubtitle3.Location = new System.Drawing.Point(446, 34);
             this.lblSubtitle3.Name = "lblSubtitle3";
-            this.lblSubtitle3.Size = new System.Drawing.Size(327, 40);
+            this.lblSubtitle3.Size = new System.Drawing.Size(369, 40);
             this.lblSubtitle3.TabIndex = 5;
-            this.lblSubtitle3.Text = "Imprimir serie Fibonacci";
+            this.lblSubtitle3.Text = "Imprimir true o false pares";
             // 
             // txtResultado3
             // 
@@ -386,36 +416,6 @@
             this.txtResultado3.Size = new System.Drawing.Size(460, 217);
             this.txtResultado3.TabIndex = 4;
             this.txtResultado3.TabStop = false;
-            // 
-            // numUserBase
-            // 
-            this.numUserBase.BackColor = System.Drawing.Color.DarkSalmon;
-            this.numUserBase.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.numUserBase.Font = new System.Drawing.Font("Jersey 10", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numUserBase.Location = new System.Drawing.Point(677, 128);
-            this.numUserBase.Name = "numUserBase";
-            this.numUserBase.Size = new System.Drawing.Size(120, 36);
-            this.numUserBase.TabIndex = 4;
-            // 
-            // lblAlto
-            // 
-            this.lblAlto.AutoSize = true;
-            this.lblAlto.ForeColor = System.Drawing.Color.Black;
-            this.lblAlto.Location = new System.Drawing.Point(459, 102);
-            this.lblAlto.Name = "lblAlto";
-            this.lblAlto.Size = new System.Drawing.Size(55, 23);
-            this.lblAlto.TabIndex = 5;
-            this.lblAlto.Text = "Altura";
-            // 
-            // lblBase
-            // 
-            this.lblBase.AutoSize = true;
-            this.lblBase.ForeColor = System.Drawing.Color.Black;
-            this.lblBase.Location = new System.Drawing.Point(673, 102);
-            this.lblBase.Name = "lblBase";
-            this.lblBase.Size = new System.Drawing.Size(45, 23);
-            this.lblBase.TabIndex = 6;
-            this.lblBase.Text = "Base";
             // 
             // WindowPractico4
             // 
@@ -432,6 +432,7 @@
             this.tbcMenu.ResumeLayout(false);
             this.tbpEjercicio1.ResumeLayout(false);
             this.tbpEjercicio1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numUserBase)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numUserAlto)).EndInit();
             this.tbpEjercicio2.ResumeLayout(false);
             this.tbpEjercicio2.PerformLayout();
@@ -442,7 +443,6 @@
             this.tbpEjercicio4.ResumeLayout(false);
             this.tbpEjercicio4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numUser3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numUserBase)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
