@@ -24,14 +24,58 @@ namespace Logic
 
         }
 
-        public string ej2(decimal userBase, decimal userAlto)
+        public string suma(string salida, double temp)
         {
 
-            string res = ((userBase * userAlto) / 2) + "";
+			double suma = temp + double.Parse(salida);
 
-            return res;
+			salida = suma.ToString();
 
-        }
+			suma = 0;
+
+			return salida;
+
+
+		}
+
+        public string resta(string salida, double temp)
+        {
+
+			double resta = temp - double.Parse(salida);
+
+			salida = resta.ToString();
+
+			resta = 0;
+
+			return salida;
+
+		}
+
+        public string multiplicar(string salida, double temp)
+        {
+
+			double multiplicar = temp * double.Parse(salida);
+
+			salida = multiplicar.ToString();
+
+			multiplicar = 0;
+
+			return salida;
+
+		}
+
+        public string dividir(string salida, double temp)
+        {
+
+			double dividir = temp / double.Parse(salida);
+
+			salida = dividir.ToString();
+
+			dividir = 0;
+
+			return salida;
+
+		}
 
         public string ej3(decimal userIn)
         {
@@ -65,7 +109,6 @@ namespace Logic
                     return true;
 
                 }
-
                 else
                     return false;
 

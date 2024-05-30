@@ -57,7 +57,7 @@ namespace Logic
 
             string res = "";
 
-            for (int i = 0; i <= ((userIn * 2) - 1); i = i + 2)
+            for (int i = 2; i <= (userIn * 2); i = i + 2)
             {
 
                 res = res + i + " ";
@@ -68,26 +68,34 @@ namespace Logic
 
         }
 
-        public string ej4(decimal userCont)
+        public string ej4(List<int> listNum)
         {
 
-            decimal calc;
+            int par = 0;
 
-            int cont = 0;
+            int impar = 0;
 
             string res = "";
 
 
-            do
+          foreach(int num in listNum)
             {
+                if(num % 2 == 0)
+                {
 
-                res = res + userCont + " ";
+                    par++;
 
-                cont++;
+                }
+                else
+                {
 
 
+                    impar++;
+
+                }
             }
-            while (cont != userCont);
+
+            res = "Se ingresaron: " + par + " números pares y " + impar + " números impares.";
 
             return res;
                 

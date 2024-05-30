@@ -16,11 +16,18 @@ namespace Logic
         }
 
 
-        public string ej1()
+        public string ej1(int contH, int contM)
         {
+            decimal total = contH + contM;
+
+            decimal porcentajeH = (contH / total) * 100;
+            decimal porcentajeM = (contM / total) * 100;
+
+            string res = "El porcentaje de hombres es: " + porcentajeH 
+                + "\r\nEl porcentaje de mujeres es: " + porcentajeM;
 
 
-            return null;
+            return res;
 
         }
 
@@ -28,7 +35,21 @@ namespace Logic
         public string ej2()
         {
 
-            return null;
+            string res = "";
+
+            int calc = 0;
+
+            for(int i = 1; i <= 500; i++)
+            {
+
+                calc = calc + i;
+
+                res = "" + calc;
+
+
+            }
+
+            return res;
 
         }
 
@@ -41,7 +62,7 @@ namespace Logic
             for (int i = 1; i <= 10; i++)
             {
 
-                res = res + "" + userIn + " x " + i + "= " + (userIn * i) + ". ";
+                res = res + "" + userIn + " x " + i + " = " + (userIn * i) + ". ";
 
             }
 

@@ -16,6 +16,9 @@ namespace MainMenu
     {
 
         private Form parentForm;
+        private int contH = 0;
+        private int contM = 0;
+
 
         public WindowPractico3(Form parentWindow)
         {
@@ -25,6 +28,8 @@ namespace MainMenu
         }
 
         public Form ParentForm1 { get => parentForm; set => parentForm = value; }
+        public int ContH { get => contH; set => contH = value; }
+        public int ContM { get => contM; set => contM = value; }
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
@@ -91,14 +96,12 @@ namespace MainMenu
             }
         }
 
-        private void btnAccept_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnAccept1_Click(object sender, EventArgs e)
         {
 
+            Practico3 practico = new Practico3();
+
+            TxtResultado1.Text = practico.ej2();
         }
 
         private void btnAccept2_Click(object sender, EventArgs e)
@@ -114,6 +117,36 @@ namespace MainMenu
             Practico3 practico = new Practico3();
 
             TxtResultado3.Text = practico.ej4(numUser3.Value);
+        }
+
+        private void btnCalc_Click(object sender, EventArgs e)
+        {
+
+            Practico3 practico = new Practico3();
+
+            TxtResultado.Text = practico.ej1(ContH, ContM);
+
+
+        }
+
+        private void btnInH_Click(object sender, EventArgs e)
+        {
+            ContH++;
+            listPersonasIn.Items.Insert(1, contH + " Hombres.");
+
+            if(listPersonasIn.Items.Count > 2)
+            {
+                listPersonasIn.Items.RemoveAt(2);
+            }
+
+        }
+
+        private void btnInM_Click(object sender, EventArgs e)
+        {
+            ContM++;
+            listPersonasIn.Items.Insert(2, contM + " Mujeres.");
+
+            listPersonasIn.Items.RemoveAt(3);
         }
     }
 }

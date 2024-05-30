@@ -45,10 +45,6 @@
     <Compile Include="Practico2.cs" />
     <Compile Include="Practico3.cs" />
     <Compile Include="Practico4.cs" />
-    <Compile Include="Practico5.cs" />
-    <Compile Include="Practico6.cs" />
-    <Compile Include="Practico7.cs" />
-    <Compile Include="Practico8.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

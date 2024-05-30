@@ -12,9 +12,9 @@ using MainMenu;
 
 namespace Design
 {
-    public partial class Form1 : Form
+    public partial class MainMenu : Form
     {
-        public Form1()
+        public MainMenu()
         {
             InitializeComponent();
         }
@@ -209,5 +209,10 @@ namespace Design
             }
 
         }
-    }
+
+		private void timerHour_Tick(object sender, EventArgs e)
+		{
+			lblHour.Text = DateTime.Now.ToShortTimeString();
+		}
+	}
 }

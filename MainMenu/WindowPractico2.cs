@@ -15,6 +15,9 @@ namespace Design
     {
 
         private Form parentForm;
+        private List<int> listNumIn;
+
+
 
         public Form ParentForm1 { get => parentForm; set => parentForm = value; }
 
@@ -23,10 +26,12 @@ namespace Design
 
             parentForm = window;
 
+            listNumIn = new List<int>();
+
             InitializeComponent();
         }
 
-      
+
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
@@ -40,7 +45,7 @@ namespace Design
             catch (Exception ex)
             {
 
-                MessageBox.Show("Error: " + ex, null, MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+                MessageBox.Show("Error: " + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
         }
@@ -57,7 +62,7 @@ namespace Design
             catch (Exception ex)
             {
 
-                MessageBox.Show("Error: " + ex, null, MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+                MessageBox.Show("Error: " + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
         }
@@ -74,7 +79,7 @@ namespace Design
             catch (Exception ex)
             {
 
-                MessageBox.Show("Error: " + ex, null, MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+                MessageBox.Show("Error: " + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
         }
@@ -91,7 +96,25 @@ namespace Design
             catch (Exception ex)
             {
 
-                MessageBox.Show("Error: " + ex, null, MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+                MessageBox.Show("Error: " + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+        }
+
+        private void btnCancel4_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                ParentForm1.Show();
+
+                this.Close();
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Error: " + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
         }
@@ -123,13 +146,39 @@ namespace Design
 
         }
 
-        private void btnAccept3_Click(object sender, EventArgs e)
+        private void btnInList_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+
+                listNumIn.Add(Convert.ToInt32(numUser4.Value));
+
+                listNumsIn.Items.Add(numUser4.Value);
+
+                numUser4.Focus();
+
+            }
+            catch(Exception ex)
+            {
+
+                MessageBox.Show("Error: " + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+
+
+        }
+
+        private void btnCalc_Click(object sender, EventArgs e)
         {
 
             Practico2 practico = new Practico2();
 
-           practico.ej4(numUser3.Value);
+            TxtResultado4.Text = practico.ej4(listNumIn);
 
         }
+
+       
     }
+        
 }
